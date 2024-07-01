@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김민주-한화인메뉴코딩</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #f36e1c;
+        }
+
+        #menu {
+            width: 970px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+        }
+
+        #menu .box {
+            width: 130px;
+        }
+
+        #menu .box h1 {
+            font-size: 18px;
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        #menu .box ul li {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        a.mic {
+            position: relative;
+            /* border:1px solid red; */
+        }
+
+        a.mic::before {
+            content: "";
+            background: url("./images/ic_mic.png")no-repeat 0 0;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            right: -18px;
+            top: 7px;
+
+        }  
+        a.mic:hover::before {            
+            right:-25px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- #menu>.box*7>ul>li*5>a -->
+    <div id="menu">
+        <div class="box">
+            <h1>경영지원</h1>
+            <ul>
+                <li><a href="#">통계</a></li>
+                <li><a href="#">법무영업</a></li>
+                <li><a href="#">개인영업</a></li>
+                <li><a href="#">특허</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">CS</a></li>
+                <li><a href="#">감사</a></li>
+                <li><a href="#">구매/물류</a></li>
+                <li><a href="#" class="mic">기획</a></li>
+                <li><a href="#">방산원가</a></li>
+                <li><a href="#">법무</a></li>
+                <li><a href="#">인사</a></li>
+                <li><a href="#" class="mic">재경/재무</a></li>
+                <li><a href="#">총무</a></li>
+                <li><a href="#">홍보</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>영업/마케팅</h1>
+            <ul>
+                <li><a href="#">영업관리</a></li>
+                <li><a href="#">수출입영업</a></li>
+                <li><a href="#">MD/Buyer</a></li>
+                <li><a href="#">국내영업</a></li>
+                <li><a href="#">디자인</a></li>
+                <li><a href="#">마케팅</a></li>
+                <li><a href="#">영업지원</a></li>
+                <li><a href="#" class="mic">해외영업</a></li>
+                <li><a href="#">금융영업 지원</a></li>
+                <li><a href="#" class="mic">금융영업-개인</a></li>
+                <li><a href="#" class="mic">금융영업-법인</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>금융/자산운용</h1>
+            <ul>
+                <li><a href="#">재무심사</a></li>
+                <li><a href="#">보험심사</a></li>
+                <li><a href="#">대체투자</a></li>
+                <li><a href="#">계리</a></li>
+                <li><a href="#">신용평가</a></li>
+                <li><a href="#" class="mic">금융상품 개발</a></li>
+                <li><a href="#">금융지원</a></li>
+                <li><a href="#">리서치</a></li>
+                <li><a href="#">리스크관리</a></li>
+                <li><a href="#">심사</a></li>
+                <li><a href="#">자산운용</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>기술/엔지니어</h1>
+            <ul>
+                <li><a href="#">생산</a></li>
+                <li><a href="#">주택사업</a></li>
+                <li><a href="#" class="mic">토목</a></li>
+                <li><a href="#">인허가</a></li>
+                <li><a href="#">건축</a></li>
+                <li><a href="#">생산관리</a></li>
+                <li><a href="#">생산기술</a></li>
+                <li><a href="#">생산지원</a></li>
+                <li><a href="#">시공</a></li>
+                <li><a href="#">시설관리</a></li>
+                <li><a href="#">개발사업</a></li>
+                <li><a href="#">품질관리</a></li>
+                <li><a href="#" class="mic">플랜트</a></li>
+                <li><a href="#">환경/안전/보건</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>R&D</h1>
+            <ul>
+                <li><a href="#">TS&D</a></li>
+                <li><a href="#" class="mic">공정연구</a></li>
+                <li><a href="#">소재연구</a></li>
+                <li><a href="#" class="mic">연구개발</a></li>
+                <li><a href="#">연구기획</a></li>
+                <li><a href="#">제품개발</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>IT</h1>
+            <ul>
+                <li><a href="#">IT 일반</a></li>
+                <li><a href="#">IT 설계/개발</a></li>
+                <li><a href="#">IT 연구</a></li>
+                <li><a href="#">IT 운영/서비스</a></li>
+                <li><a href="#">IT 컨설팅</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>기타</h1>
+            <ul>
+                <li><a href="#">인턴십</a></li>
+                <li><a href="#">메뉴개발</a></li>
+                <li><a href="#">여신관리</a></li>
+                <li><a href="#">수신</a></li>
+                <li><a href="#">부동산자산관리</a></li>
+                <li><a href="#">선수단운영</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
